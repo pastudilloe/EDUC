@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 
 <head>
-   <title>Ecuador's Economic Activities</title>
+   <title>Educación en Ecuador</title>
    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
 </head>
 
@@ -51,11 +51,11 @@ var viz = d3plus.viz()
 // here we get all the data we need from the server, firt the raw data, then
 // each of the attribute files
 
-    d3.tsv(".code_acceso.tsv", function(error4, n2x) {
+    d3.tsv("./code_acceso.tsv", function(error4, n2x) {
       if (error4) return console.error(error4);
       // console.log(n2x);
 
-      d3.tsv(".code_sostenimiento.tsv", function(error3, n1x) {
+      d3.tsv("./code_sostenimiento.tsv", function(error3, n1x) {
         if (error3) return console.error(error3);
         // console.log(n1x);
 
